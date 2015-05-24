@@ -1,0 +1,48 @@
+
+create table Usuario(
+  Idusuario  varchar2(100),
+  Idpassword varchar2(100)
+);
+select *from Usuario;
+
+create table Producto(
+  Nombre VARCHAR2(100),
+  Estado VARCHAR2(100),
+  Precio_por_mayor  FLOAT,
+  Cant_minorista_mayorista FLOAT,
+  Usuario_creacion VARCHAR2(100),
+  Fecha_creacion    DATE,
+  Usuario_Modificacion  VARCHAR2(100),
+  Fecha_Modificacion    DATE
+);
+select *from Producto;
+
+create table Pedido(
+  Fecha_pedido  DATE,
+  Cantidad  FLOAT,
+  Precio_unitario FLOAT,
+  Precio_total   FLOAT
+);
+select *from Pedido;
+
+create table Operacion(
+  Tipo   VARCHAR2(100),
+  Monto  FLOAT,
+  Egreso FLOAT,
+  Ingreso  FLOAT
+);
+select *from Operacion;
+
+create table Cliente(
+  Nombre VARCHAR2(100),
+  Codigo VARCHAR2(100)
+);
+select *from Cliente;
+
+create table Catalogo_de_operacion(
+  Ingreso_egreso  FLOAT,
+  Pago_empleado FLOAT,
+  Combustible  FLOAT,
+  Alquiler FLOAT
+);
+select *from Catalogo_de_operacion;
